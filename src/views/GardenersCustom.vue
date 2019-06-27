@@ -1,18 +1,19 @@
 <template>
-      <div class="column is-10" style="outline: 1px solid black;">
-        <h3>GARDENERS</h3>
+      <div class="">
+        <MainSideHeader> </MainSideHeader>
+        <!-- <router-link class="button is-white  btn" to=" ">Add Gardener</router-link> -->
         <div class="select">
           <select>
-            <option>New Customer</option>
+            <option id="">New Customer</option>
             <option>Existing Customer</option>
           </select>
         </div>
-        
+
 
         <div class="">
-          <img src="img/agusto.png" alt="Jennifer's picture">
+          <img src="../assets/agusto.png" alt="Jennifer's picture">
           <ul>
-            <li>Jennifer Omage</li>
+            <li>Ope Bello</li>
             <li>Lekki Axis</li>
             <li>28 Customer</li>
           </ul>
@@ -57,8 +58,13 @@
 
 
 <script>
+import MainSideHeader from '../components/MainSideHeader.vue';
+
 export default {
     name: 'GardenersCustom',
+    components: {
+      MainSideHeader,
+    }
 }
 </script>
 

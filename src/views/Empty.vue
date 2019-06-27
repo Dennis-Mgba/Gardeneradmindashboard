@@ -1,12 +1,12 @@
 <template>
-  <div class="column is-table is-10 sm">
+  <div class="sm">
     <MainSideHeader> </MainSideHeader>
-    <router-link class="button is-white  btn" v-onclick="component='Gardeners'">Add Gardener</router-link>
+    <router-link class="button is-white  btn" to="/gardeners">Add Gardeners</router-link>
   </div>
 </template>
 
 <script>
-import MainSideHeader from './MainSideHeader.vue';
+import MainSideHeader from '../components/MainSideHeader.vue';
 
 export default {
     name: 'Empty',

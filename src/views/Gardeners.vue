@@ -1,7 +1,8 @@
 <template>
-        <div class="column is-10" style="outline: 1px solid black;">
-        <h3>GARDENERS</h3>
-        <a class="button is-white ">Add gardeners</a>
+    <div class="sm">
+      <MainSideHeader> </MainSideHeader>
+        <!-- <router-link class="button is-white  btn" to="">Add Gardeners</router-link> -->
+
         <p>Showing 3 gardeners</p>
 
         <p><i class="fas fa-search" aria-hidden="true"></i> search</p>
@@ -14,7 +15,7 @@
             <th>Clusters</th>
           </tr>
           <tr>
-            <td> <a href="">Opeyemi Bello</a></td>
+            <td><img src="" alt=""> <router-link class="" to="/gardenerscustom">Ope Bello</router-link></td>
             <td><progress class="progress is-smalls is-success" value="60" max="100"></progress> 25</td>
             <td>Lead Gardener</td>
             <td>Ajah</td>
@@ -32,13 +33,16 @@
             <td>Yaba</td>
           </tr>
         </table>
-      </div>
+    </div>
 </template>
 
-
 <script>
+import MainSideHeader from '../components/MainSideHeader.vue';
 export default {
     name: 'Gardeners',
+    components: {
+      MainSideHeader,
+    }
 }
 </script>
 
